@@ -42,6 +42,8 @@ https://bit.ly/angular-glencore
 - *ngIf or [disabled]= also consider [hidden]=
 
 Questions:
+- Hash Routing
+- Reusability options (modules, stand alone)
 
 ## Tuesday
 - finish Content Projection ex.

@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Basic App';
   PI = Math.PI;
   imgSrc = 'https://http.cat/404';
+  name = '';
 
   sayHello(name: string): string {
     return `Hello ${name}!`;

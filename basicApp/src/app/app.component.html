@@ -1,3 +1,22 @@
+<nav>
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Home
+  </a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a
+    routerLink="/contacts"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Contacts</a
+  >
+</nav>
+
+<router-outlet></router-outlet>
+
 <p>
   {{ title }}
 </p>
@@ -9,3 +28,7 @@
 <button (click)="handleMyEvent($event)">Click me!</button>
 
 <img [src]="imgSrc" />
+
+<input [(ngModel)]="name" />
+
+<p>{{ name }}</p>
