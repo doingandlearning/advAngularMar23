@@ -1,34 +1,12 @@
-<nav>
-  <a
-    routerLink="/"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-  >
-    Home
-  </a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
-  <a
-    routerLink="/contacts"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-    >Contacts</a
-  >
-</nav>
 
-<router-outlet></router-outlet>
+<app-layout [withNav]="true">
+  <div slot="maincontent">
+    <router-outlet></router-outlet>
+  </div>
+  <div slot="header">
+    <h1>
+      This is really great - enjoy it!
+    </h1>
+  </div>
+</app-layout>
 
-<p>
-  {{ title }}
-</p>
-
-<p>
-  {{ sayHello("Ka") }}
-</p>
-
-<button (click)="handleMyEvent($event)">Click me!</button>
-
-<img [src]="imgSrc" />
-
-<input [(ngModel)]="name" />
-
-<p>{{ name }}</p>

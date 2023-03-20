@@ -1,0 +1,26 @@
+<ng-template #defaultNav>
+	<nav>
+		<a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+		>
+    Home
+  </a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a
+	routerLink="/contacts"
+	routerLinkActive="active"
+	[routerLinkActiveOptions]="{ exact: true }"
+	>Contacts</a
+  >
+</nav>
+</ng-template>
+
+<ng-template #narrowNav>This is a narrowNav</ng-template>
+
+<ng-container *ngTemplateOutlet="withNav ? defaultNav : narrowNav"></ng-container>
+
+<ng-content select="[slot='header']"></ng-content>
+<ng-content select="[slot='maincontent']"></ng-content>
+<footer><h5>Glencore</h5></footer>

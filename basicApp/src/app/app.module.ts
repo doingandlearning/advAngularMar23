@@ -10,9 +10,25 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactDisplayComponent } from './contact-display/contact-display.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ReversePipe } from './reverse.pipe';
+import { LayoutComponent } from './layout/layout.component';
+import { ConditionalComponent } from './conditional/conditional.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, NotFoundComponent, ContactsComponent, ContactComponent, ContactDisplayComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent,
+    ContactsComponent,
+    ContactComponent,
+    ContactDisplayComponent,
+    PipesComponent,
+    ReversePipe,
+    LayoutComponent,
+    ConditionalComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

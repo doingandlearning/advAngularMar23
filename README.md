@@ -28,18 +28,18 @@ https://bit.ly/angular-glencore
 - generating stuff
 	- generate a component
 	- exploring the CLI
-- pipes
-	- https://angular.io/guide/pipes
 - components, modules etc
 - bindings
 - architectural
 - complete the routing
 - compare ways to pass data around in an app
 - input/output/event
-- content projection
 - Review Exercise
-- how to migrate from older angular
+- pipes
+	- https://angular.io/guide/pipes
+- content projection
 - *ngIf or [disabled]= also consider [hidden]=
+- how to migrate from older angular
 
 Questions:
 - Hash Routing
