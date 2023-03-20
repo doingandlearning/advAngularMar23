@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-contact-display',
