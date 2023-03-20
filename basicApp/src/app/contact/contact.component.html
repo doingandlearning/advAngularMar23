@@ -1,6 +1,8 @@
 <div *ngIf="contact">
-	<h1>{{contact.name}}</h1>
-	<h2>{{contact.email}}</h2>
-	<p>{{ contact.isWorking ? "They are working hard." : "Not working today"}}</p>
-
+  <app-contact-display
+    [name]="contact.name"
+    [email]="contact.email"
+		[isWorking]="contact.isWorking"
+		(hello)="handleHello($event)"
+  ></app-contact-display>
 </div>

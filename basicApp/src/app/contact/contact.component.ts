@@ -17,4 +17,8 @@ export class ContactComponent {
       );
     });
   }
+
+  handleHello(event: { name: string }) {
+    console.log(`${event.name} says hello!`);
+  }
 }

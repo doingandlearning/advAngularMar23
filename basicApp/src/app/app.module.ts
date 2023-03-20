@@ -9,9 +9,10 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactDisplayComponent } from './contact-display/contact-display.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, NotFoundComponent, ContactsComponent, ContactComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, NotFoundComponent, ContactsComponent, ContactComponent, ContactDisplayComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
