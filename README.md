@@ -64,9 +64,11 @@ Questions:
 questions:
 - releases that don't end up in browsers
 - routing: router guards, strategies of routing (hash), 
-- Lazy loading
+- Lazy loading 
 - does it tree shake to make a single instance of module for multiple module imports?
-
+- why does app.module not have CommonModule ?? (BrowserModule)
+- Using other non-standalone components
+- Libraries
 
 ## Wednesday
 - ngrx

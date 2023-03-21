@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 
 @Injectable()
 export class LoggerService {
-  constructor(private enabled: boolean) {}
+  constructor(@Inject(Boolean) private enabled: boolean) {}
 }
