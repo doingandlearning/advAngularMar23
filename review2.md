@@ -16,7 +16,12 @@ My version is in the repo if you'd like to start from there.
 We need to ask the user for 'city' and 'country' values, then fetch a weather report from 
 
 http://api.openweathermap.org/data/2.5/weather?q=sofia,bg&APPID=48f2d5e18b0d2bc50519b58cce6409f1&units=metric
-(Replace sofia, bg with ${city) and ${country} as entered by the user)
+
+```js
+`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=48f2d5e18b0d2bc50519b58cce6409f1&units=metric`
+```
+
+(Replace sofia, bg with city and country as entered by the user)
 
 From the returned JSON, decide what you will show description and temperature 
 	e.g. myWeatherClassInstance.weatherDescription = this.weatherReport.weather[0].description
