@@ -11,6 +11,8 @@ https://bit.ly/angular-glencore
 
 `ng new`
 
+kevin@kevincunningham.co.uk
+
 ## Monday
 - intro
 	- what do you know
@@ -57,23 +59,26 @@ Questions:
 	- subscription: `every subscription is destroyed when component is destroyed
 	- manually unsubscribe too
 - Review Exercise
-- Forms
 - Change detection
 - rxjs, combining data
+- Forms
 
 questions:
 - releases that don't end up in browsers
 - routing: router guards, strategies of routing (hash), 
-- Lazy loading 
+<!-- - Lazy loading  -->
 - does it tree shake to make a single instance of module for multiple module imports?
-- why does app.module not have CommonModule ?? (BrowserModule)
+<!-- - why does app.module not have CommonModule ?? (BrowserModule) -->
 - Using other non-standalone components
 - Libraries
+- localStorage
+- mocks vs stubs vs the actual classes
 
 ## Wednesday
 - ngrx
 - Ivy: much better tree-shaking, new DI, faster/smaller code modules, no need for app.module etc.
 - Libraries
+
 - Testing unit e2e
   see https://github.com/juristr/angular-testing-recipes
   (download it, unzip it, npm install...)

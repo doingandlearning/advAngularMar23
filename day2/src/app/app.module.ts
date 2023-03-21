@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser'; // This is where get 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsModule } from './products/products.module';
+// import { ProductsModule } from './products/products.module';
 import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [AppComponent, TodoListComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ProductsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
