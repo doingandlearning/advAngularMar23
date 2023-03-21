@@ -5,9 +5,11 @@
 
 Create a Weather API using inputs to get the data and a button to trigger the request
 
+![Alt text](Screenshot%202023-03-21%20at%2013.58.33.png)
+
 ## Possible approach
 
-You can build on the project you created yesterday and use that component in this project.
+You *can* build on the project you created yesterday and use that component in this project.
 
 My version is in the repo if you'd like to start from there. 
 
