@@ -42,24 +42,34 @@ https://bit.ly/angular-glencore
 - how to migrate from older angular
 
 Questions:
-- Hash Routing
+- Hash Routing and guards
 - Reusability options (modules, stand alone)
 
-## Tuesday
-- finish Content Projection ex.
+## Tuesday.
 - brief review
 - HttpClient Module (replaces earlier Http Module)
 - Services
-- async pipe
-- subscription: every subscription is destroyed when component is destroyed
-- manually unsubscribe too
-- life-cycle events
-- change detection
+	- Providers
+	- useFactory
+	- useFactory with deps
+- Strategies for reusability - modules and standalone 
+- Observables
+	- subscription: `every subscription is destroyed when component is destroyed
+	- manually unsubscribe too
+- Forms
+- Change detection
 - Review Exercise
 - rxjs, combining data
-- questions
+
+questions:
+- releases that don't end up in browsers
+- routing: router guards, strategies of routing (hash), 
+- Lazy loading
+- does it tree shake to make a single instance of module for multiple module imports?
+
 
 ## Wednesday
+- ngrx
 - Ivy: much better tree-shaking, new DI, faster/smaller code modules, no need for app.module etc.
 - Libraries
 - Testing unit e2e
