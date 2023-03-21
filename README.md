@@ -56,9 +56,9 @@ Questions:
 - Observables
 	- subscription: `every subscription is destroyed when component is destroyed
 	- manually unsubscribe too
+- Review Exercise
 - Forms
 - Change detection
-- Review Exercise
 - rxjs, combining data
 
 questions:

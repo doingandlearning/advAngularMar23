@@ -1,0 +1,10 @@
+
+<select [(ngModel)]="units">
+	<option value="metric">Celcius</option>
+	<option value="kelvin">Kelvin</option>
+</select>
+<app-data buttonLabel="Get Weather" (myEvent)="handleEventClick($event)"></app-data>
+<button (click)="clearStore()">Clear store</button>
+
+<h2>Here is the weather for {{city}}, {{country}}:</h2>
+<pre>{{weatherData | json}}</pre>
