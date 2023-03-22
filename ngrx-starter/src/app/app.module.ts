@@ -7,6 +7,11 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { StoreModule } from '@ngrx/store';
+import {
+  cartReducer,
+  metaReducerLocalStorage,
+} from './cart-state-store/cart.reducer';
+import { InputButtonComponent } from './input-button/input-button.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +19,16 @@ import { StoreModule } from '@ngrx/store';
     ShoppingCartComponent,
     ProductsComponent,
     HeaderComponent,
+    InputButtonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StoreModule.forRoot(
+      { cartEntries: cartReducer },
+      { metaReducers: [metaReducerLocalStorage] }
+    ),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
