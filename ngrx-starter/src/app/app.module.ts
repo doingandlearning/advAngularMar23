@@ -12,6 +12,7 @@ import {
   metaReducerLocalStorage,
 } from './cart-state-store/cart.reducer';
 import { InputButtonComponent } from './input-button/input-button.component';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,10 @@ import { InputButtonComponent } from './input-button/input-button.component';
       { cartEntries: cartReducer },
       { metaReducers: [metaReducerLocalStorage] }
     ),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      trace: true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
