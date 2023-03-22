@@ -16,6 +16,7 @@ import { RestService } from '../rest.service';
     },
     RestService,
   ],
+  changeDetection:
 })
 export class TodoListComponent {
   todos: any[] = [];

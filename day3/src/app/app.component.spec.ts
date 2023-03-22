@@ -5,8 +5,12 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [AppComponent],
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [
+        AppComponent
+      ],
     }).compileComponents();
   });
 
@@ -16,21 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'day2'`, () => {
+  it(`should have as title 'day3'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-
     const app = fixture.componentInstance;
-    app.title = 'My super cool title';
-    fixture.changeDetectorRef.detectChanges();
-    expect(app.title).toEqual('My super cool title');
+    expect(app.title).toEqual('day3');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'day2 app is running!'
-    );
+    expect(compiled.querySelector('.content span')?.textContent).toContain('day3 app is running!');
   });
 });

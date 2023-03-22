@@ -60,12 +60,13 @@ Questions:
 	- manually unsubscribe too
 - Review Exercise
 - Change detection
-- rxjs, combining data
-- Forms
+
 
 questions:
 - releases that don't end up in browsers
-- routing: router guards, strategies of routing (hash), 
+	- Hashing: `--output-hashing=all`
+- routing: router guards, strategies of routing (hash)
+	- Location/Navigation strategies
 <!-- - Lazy loading  -->
 - does it tree shake to make a single instance of module for multiple module imports?
 <!-- - why does app.module not have CommonModule ?? (BrowserModule) -->
@@ -73,12 +74,14 @@ questions:
 - Libraries
 - localStorage
 - mocks vs stubs vs the actual classes
+- template not doing what you expect - how to debug in the template
 
 ## Wednesday
 - ngrx
+- rxjs, combining data
 - Ivy: much better tree-shaking, new DI, faster/smaller code modules, no need for app.module etc.
 - Libraries
-
+- Forms
 - Testing unit e2e
   see https://github.com/juristr/angular-testing-recipes
   (download it, unzip it, npm install...)
@@ -90,3 +93,6 @@ questions:
 - publish - production - look at the generated code esp js, also aot and jit
 - locale (if time)
 - end of course feedback
+
+
+Feedback link: https://frameworktraining.typeform.com/to/BK0CQ0G1
